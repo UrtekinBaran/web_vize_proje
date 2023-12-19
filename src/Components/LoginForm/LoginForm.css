@@ -1,0 +1,71 @@
+.login-container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #b39ddb, #9575cd);
+  border: 1px solid #f64d4d;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.login-container .input-box {
+  margin-bottom: 15px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: transparent;
+  color: #fff;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.login-container input::placeholder {
+  color: #fff; /* Kullanıcı adı ve şifre placeholder rengi */
+}
+
+.login-container input:focus {
+  outline: none;
+  border-color: #ba68c8;
+}
+
+.login-container .login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ba68c8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.login-container .login-btn:hover {
+  background-color: #8e24aa;
+}
+
+.login-container .text {
+  margin: 15px 0;
+  color: #fff;
+}
+
+.login-container .popup {
+  background: #d81b60;
+  padding: 10px;
+  border: 1px solid #e56b6f;
+  border-radius: 5px;
+  margin-top: 15px;
+  color: #fff;
+}

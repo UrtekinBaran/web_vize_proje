@@ -1,0 +1,19 @@
+/* src/styles/Profil.css */
+.profil-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+  }
+  
+  .avatar-container {
+    margin-bottom: 20px;
+  }
+  
+  .avatar-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
