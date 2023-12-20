@@ -10,11 +10,11 @@ const Profil = ({toLogin}) => {
 
       </div>
       <div className="bilgi-container">
-        <h2>Kullanıcı Adı</h2>
-        <p>Merhaba, benim adım Kullanıcı Adı. Kendimden biraz bahsedeyim...</p>
+        <h2>Baran</h2>
+        <p>Merhaba, ben Baran Yemek Tariflerine Hoş geldiniz.</p>
       </div>
       <button onClick={toLogin}>
-        Login
+        Kayıt olmak için son bir adım
       </button>
     </div>
   );

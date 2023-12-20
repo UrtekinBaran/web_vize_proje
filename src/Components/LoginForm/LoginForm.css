@@ -1,8 +1,11 @@
+/* LoginForm.css */
+
 .login-container {
   width: 300px;
   margin: 100px auto;
   padding: 20px;
   background: linear-gradient(to right, #b39ddb, #9575cd);
+  background-size: cover;
   border: 1px solid #f64d4d;
   border-radius: 10px;
   text-align: center;
@@ -68,4 +71,82 @@
   border-radius: 5px;
   margin-top: 15px;
   color: #fff;
+}
+
+.login-container a {
+  color: #fff; /* Bağlantı rengi */
+  text-decoration: underline; /* Altı çizili stil */
+}
+
+.login-container a:hover {
+  text-decoration: none; /* Hover durumunda altı çiziyi kaldır */
+}
+
+
+/* LoginForm.css */
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid > div {
+  display: flex;
+  flex-direction: col;
+  align-items: flex-start; /* Resmi sola hizala */
+}
+
+.grid > div img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* İsteğe bağlı: Kenarlık yuvarlatma */
+}
+/* LoginForm.css */
+
+form {
+  display: grid;
+  gap: 10px;
+  align-items: flex-end; /* Formu sağ köşeye hizala */
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+form div p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px; /* İstediğiniz boşluk değerini ayarlayabilirsiniz */
+}
+
+form div p input {
+  margin-right: 5px; /* İstediğiniz boşluk değerini ayarlayabilirsiniz */
+}
+
+form div p label {
+  margin: 0;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ba68c8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+  background-color: #8e24aa;
 }

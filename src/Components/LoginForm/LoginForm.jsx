@@ -2,33 +2,39 @@
 
 import React from "react";
 import "./LoginForm.css";
+import resim from '../../assets/resim.jpg';
 
 const LoginForm = ({ onLogin }) => {
   const handleLogin = () => {
-    // Burada herhangi bir kullanıcı adı ve şifre kontrolü yapmamıza gerek yok
-    // Login butonuna basıldığında API'nin menüsüne yönlendir
     onLogin();
   };
 
   return (
-    <div className="login-container">
-      <h1>Hoşgeldiniz! Lütfen Giriş Yapın</h1> {/* Eklenen satır */}
-
-      <div className="input-box">
-        <input type="text" placeholder="Username" />
+    <div className="grid grid-cols-1 sm:grid-cols-2">
+      <div className='hidden sm:block'>
+        <img src={resim} alt="" />
       </div>
 
-      <div className="input-box">
-        <input type="password" placeholder="Password" />
+      <div>
+        <form>
+          <h2>SIGN IN</h2>
+          <div>
+            <label>User Name</label>
+            <input type="text" />
+          </div>
+          <div>
+            <label>Password</label>
+            <input type="password" />
+          </div>
+          <div>
+              <p><input type="checkbox"/>Remember me</p>
+              <p>Forgot Password</p>
+          </div>
+          <button className="login-btn" onClick={handleLogin}>
+            Sign In
+          </button>
+        </form>
       </div>
-
-      <button className="login-btn" onClick={handleLogin}>
-        Login
-      </button>
-
-      <p className="text">Or login using</p>
-
-      {/* Popup gibi bir hata mesajı eklemek isteriseniz buraya ekleyebilirsiniz */}
     </div>
   );
 };
